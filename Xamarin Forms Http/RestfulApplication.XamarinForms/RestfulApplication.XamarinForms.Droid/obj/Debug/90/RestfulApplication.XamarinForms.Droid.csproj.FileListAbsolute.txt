@@ -1,0 +1,9 @@
+D:\Development\Xamarin\Xamarin Forms Http clients\[C#]-Xamarin Forms Http clients\C#\RestfulApplication.XamarinForms\RestfulApplication.XamarinForms.Droid\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+D:\Development\Xamarin\Xamarin Forms Http clients\[C#]-Xamarin Forms Http clients\C#\RestfulApplication.XamarinForms\RestfulApplication.XamarinForms.Droid\obj\Debug\90\build.props
+D:\Development\Xamarin\Xamarin Forms Http clients\[C#]-Xamarin Forms Http clients\C#\RestfulApplication.XamarinForms\RestfulApplication.XamarinForms.Droid\obj\Debug\90\adb.props
+D:\Development\Xamarin\Xamarin Forms Http clients\[C#]-Xamarin Forms Http clients\C#\RestfulApplication.XamarinForms\RestfulApplication.XamarinForms.Droid\obj\Debug\90\RestfulApplication.XamarinForms.Droid.csprojAssemblyReference.cache
+D:\Development\Xamarin\Xamarin Forms Http clients\[C#]-Xamarin Forms Http clients\C#\RestfulApplication.XamarinForms\RestfulApplication.XamarinForms.Droid\obj\Debug\90\_VerifyXamarinAndroidSupportVersions.stamp
+D:\Development\Xamarin\Xamarin Forms Http clients\[C#]-Xamarin Forms Http clients\C#\RestfulApplication.XamarinForms\RestfulApplication.XamarinForms.Droid\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
+D:\Development\Xamarin\Xamarin Forms Http clients\[C#]-Xamarin Forms Http clients\C#\RestfulApplication.XamarinForms\RestfulApplication.XamarinForms.Droid\obj\Debug\90\resourcepaths.cache
+D:\Development\Xamarin\Xamarin Forms Http clients\[C#]-Xamarin Forms Http clients\C#\RestfulApplication.XamarinForms\RestfulApplication.XamarinForms.Droid\obj\Debug\90\resourcecache.stamp
+D:\Development\Xamarin\Xamarin Forms Http clients\[C#]-Xamarin Forms Http clients\C#\RestfulApplication.XamarinForms\RestfulApplication.XamarinForms.Droid\obj\Debug\90\res.flag
