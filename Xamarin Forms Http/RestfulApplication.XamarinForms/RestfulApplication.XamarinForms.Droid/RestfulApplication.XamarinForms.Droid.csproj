@@ -55,7 +55,16 @@
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.4.4.0.991537\lib\MonoAndroid90\FormsViewGroup.dll</HintPath>
     </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=4.3.31.38647, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Portable.MvvmLightLibs.4.3.31.2\lib\portable-net45+wp8+win8+wpa81\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=4.3.31.42849, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Portable.MvvmLightLibs.4.3.31.2\lib\portable-net45+wp8+win8+wpa81\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
     <Reference Include="Java.Interop" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Portable.MvvmLightLibs.4.3.31.2\lib\portable-net45+wp8+win8+wpa81\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
