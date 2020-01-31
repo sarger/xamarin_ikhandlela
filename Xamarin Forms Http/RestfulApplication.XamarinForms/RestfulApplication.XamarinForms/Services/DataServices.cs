@@ -22,7 +22,8 @@ namespace RestfulApplication.Clients.Core.Services
             {
                 var jsonResponse = await httpClient.GetStringAsync(BaseUrl);
 
-                var employeesList = await JsonConvert.DeserializeObjectAsync<List<Employee>>(jsonResponse);
+                var employeesList =  await  Task.Factory.StartNew(() => JsonConvert.DeserializeObject<List<Employee>>(jsonResponse));
+
 
                 return employeesList;  
             }
@@ -36,8 +37,9 @@ namespace RestfulApplication.Clients.Core.Services
         public async Task AddEmployeeAsync(Employee employee)
         {
             var httpClient = new HttpClient();
+                       
+            var jsonEmployee = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(employee));
 
-            var jsonEmployee = await JsonConvert.SerializeObjectAsync(employee);
 
             HttpContent httpContent = new StringContent(jsonEmployee);
 
@@ -59,8 +61,9 @@ namespace RestfulApplication.Clients.Core.Services
         public async Task EditEmployeeAsync(Employee employee)
         {
             var httpClient = new HttpClient();
-            
-            var jsonEmployee = await JsonConvert.SerializeObjectAsync(employee);
+           
+     
+            var jsonEmployee = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(employee));
 
             var httpContent = new StringContent(jsonEmployee);
 
