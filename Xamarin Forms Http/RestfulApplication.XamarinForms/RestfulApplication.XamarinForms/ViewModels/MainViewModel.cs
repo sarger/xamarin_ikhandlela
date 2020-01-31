@@ -15,9 +15,9 @@ namespace RestfulApplication.Clients.Core.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {
-        private List<Employee> _employeesList;
+        private List<PostCategory> _employeesList;
 
-        public List<Employee> EmployeesList
+        public List<PostCategory> EmployeesList
         {
             get { return _employeesList; }
             set
@@ -35,19 +35,19 @@ namespace RestfulApplication.Clients.Core.ViewModels
         {
             RefreshCommand = new RelayCommand(async() => await DownloadDataAsync());
             
-            SendEmployeeMessageCommand = new RelayCommand<Employee>(SendEmployeeMessage);
+            SendEmployeeMessageCommand = new RelayCommand<PostCategory>(SendEmployeeMessage);
 
             DownloadDataAsync();
         }
 
-        private void SendEmployeeMessage(Employee employee)
+        private void SendEmployeeMessage(PostCategory postcategory)
         {
-            Messenger.Default.Send(employee);
+            Messenger.Default.Send(postcategory);
         }
 
         private async Task DownloadDataAsync()
         {
-            var dataServices = new DataServices();
+            var dataServices = new DataPostCategoryServices();
 
             EmployeesList = await  dataServices.GetEmployeesAsync();
         }
