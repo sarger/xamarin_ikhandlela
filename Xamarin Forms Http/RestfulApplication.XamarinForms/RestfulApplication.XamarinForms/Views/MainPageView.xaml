@@ -4,7 +4,10 @@
              x:Class="RestfulApplication.XamarinForms.Views.MainPageView">
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d8ff47d6cea4f2b989537bc6c23d0e965d95e4e
    <StackLayout VerticalOptions="FillAndExpand">
 
       <ListView ItemsSource="{Binding EmployeesList}"
@@ -27,12 +30,16 @@
                            <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5d8ff47d6cea4f2b989537bc6c23d0e965d95e4e
                         <StackLayout Grid.Column="1"
                                      BackgroundColor="Teal"
                                      HorizontalOptions="FillAndExpand"
                                      Padding="12,12,12,6">
 
-                           <Label Text="{Binding FullName}"
+                           <Label Text="{Binding Category}"
                                   TextColor="#fffa28d4"
                                   Font="Large">
                               <Label.TextColor>
@@ -43,7 +50,7 @@
                               </Label.TextColor>
                            </Label>
 
-                           <Label Text="{Binding Department}"
+                           <Label Text="{Binding Id}"
                                   Font="Medium"
                                   LineBreakMode="TailTruncation"
                                   HorizontalOptions="End"/>
@@ -55,7 +62,7 @@
          </ListView.ItemTemplate>
       </ListView>
 
-      <Button Text="Refresh"
+      <Button Text="Refresh" TextColor="Aquamarine"
               Command="{Binding RefreshCommand}"/>
 
       <Button Text="New"

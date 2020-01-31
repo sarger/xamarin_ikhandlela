@@ -16,9 +16,9 @@ namespace RestfulApplication.Clients.Core.ViewModels
 
     public class DetailsViewModel : INotifyPropertyChanged
     {
-        private Employee _selectedEmployee;
+        private PostCategory _selectedEmployee;
 
-        public Employee SelectedEmployee
+        public PostCategory SelectedEmployee
         {
             get { return _selectedEmployee; }
             set
@@ -36,9 +36,9 @@ namespace RestfulApplication.Clients.Core.ViewModels
 
         public DetailsViewModel()
         {
-            _selectedEmployee = new Employee();
+            _selectedEmployee = new PostCategory();
 
-            var dataServices = new DataServices();
+            var dataServices = new DataPostCategoryServices();
 
             AddEmployeeCommand = new RelayCommand(async () => await dataServices.AddEmployeeAsync(SelectedEmployee));
 
@@ -46,10 +46,10 @@ namespace RestfulApplication.Clients.Core.ViewModels
 
             DeleteEmployeeCommand = new RelayCommand(async () => await dataServices.DeleteEmmployeeAsync(SelectedEmployee));
 
-            Messenger.Default.Register<Employee>(this, OnEmployeeMessageReceived);
+            Messenger.Default.Register<PostCategory>(this, OnEmployeeMessageReceived);
         }
 
-        private void OnEmployeeMessageReceived(Employee employee)
+        private void OnEmployeeMessageReceived(PostCategory employee)
         {
             SelectedEmployee = employee;
         }

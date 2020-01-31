@@ -26,7 +26,7 @@ namespace RestfulApplication.XamarinForms.Views
 
                 var mainViewModel = BindingContext as MainViewModel;
 
-                var selectedEmployee = ((ListView) sender).SelectedItem as Employee;
+                var selectedEmployee = ((ListView) sender).SelectedItem as PostCategory;
 
                 mainViewModel.SendEmployeeMessageCommand.Execute(selectedEmployee);
 
