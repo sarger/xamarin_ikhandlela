@@ -73,9 +73,10 @@ namespace FarmingApp.ViewModels
         {
             try
             {
-                var dataServices = new DataPostServices();
+               
 
-                post = await dataServices.GetPostById(Id);
+                post = await new DataPostServices().GetPostById(Id);
+                post.Comments = await new DataUserCommentService().GetCommentByPostId(Id);
             }
             catch (Exception ex)
             {
