@@ -14,18 +14,18 @@ namespace FarmingApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPageView : ContentPage
     {
-        public MainViewModel viewModel;
+        public PostCategoriesViewModel viewModel;
         public MainPageView()
         {
             InitializeComponent();
-                 BindingContext = viewModel = new MainViewModel();
+                 BindingContext = viewModel = new PostCategoriesViewModel();
         }
 
         private async void NavigateToDetailsPageView(object sender, EventArgs e)
         {
             try
             {
-                var detailsPage = new DetailsPageView();
+                var detailsPage = new PostsPageView();
 
 
                 var selectedPostCategory = ((ListView)sender).SelectedItem as PostCategory;
@@ -44,7 +44,7 @@ namespace FarmingApp.Views
         {
             try
             {
-                var detailsPage = new DetailsPageView();
+                var detailsPage = new PostsPageView();
 
                 await Navigation.PushModalAsync(detailsPage);
             }

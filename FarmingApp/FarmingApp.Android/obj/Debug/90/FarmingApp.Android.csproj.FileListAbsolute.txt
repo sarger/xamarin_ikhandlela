@@ -506,4 +506,3 @@ D:\Development\Ikhandlela\FarmingApp\FarmingApp.Android\obj\Debug\90\android\src
 D:\Development\Ikhandlela\FarmingApp\FarmingApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\IndicatorViewRenderer.java
 D:\Development\Ikhandlela\FarmingApp\FarmingApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\ScrollLayoutManager.java
 D:\Development\Ikhandlela\FarmingApp\FarmingApp.Android\obj\Debug\90\android\src\crc643f46942d9dd1fff9\SwipeViewRenderer.java
-D:\Development\Ikhandlela\FarmingApp\FarmingApp.Android\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp

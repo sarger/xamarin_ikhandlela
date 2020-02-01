@@ -2,6 +2,7 @@
 using FarmingApp.Models;
 using Newtonsoft.Json;
 using Plugin.Toast;
+using System.Linq;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -39,20 +40,19 @@ namespace FarmingApp.Services
             return null;
         }
 
-        public async Task<List<Post>> GetPostById(int Id)
+        public async Task<Post> GetPostById(int Id)
         {
             var httpClient = new HttpClient();
 
             try
             {
-                var url = Settings.GetBaseURL(UrlAction.GetPostById.Value);
+                var url = Settings.GetBaseURL(UrlAction.GetPostById.Value)+ Id;
 
                 var jsonResponse = await httpClient.GetStringAsync(url);
 
                 var postcategoriesList = await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<List<Post>>(jsonResponse));
-
-
-                return postcategoriesList;
+                
+                return postcategoriesList.FirstOrDefault();
             }
             catch (Exception exc)
             {

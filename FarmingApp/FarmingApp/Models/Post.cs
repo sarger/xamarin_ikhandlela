@@ -10,6 +10,8 @@ namespace FarmingApp.Models
         public int Id { get; set; }
         public string Content { get; set; }
 
+        public List<UserComment> Comments { get; set; }
+
         public string Name { get; set; }
 
         public DateTime Date { get; set; }
