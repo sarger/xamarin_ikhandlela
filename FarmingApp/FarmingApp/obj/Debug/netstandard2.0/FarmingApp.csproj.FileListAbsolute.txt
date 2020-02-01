@@ -1,0 +1,15 @@
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\bin\Debug\netstandard2.0\FarmingApp.deps.json
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\bin\Debug\netstandard2.0\FarmingApp.dll
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\bin\Debug\netstandard2.0\ref\FarmingApp.dll
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\bin\Debug\netstandard2.0\FarmingApp.pdb
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\Views\DetailsPageView.xaml.g.cs
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\Views\MainPageView.xaml.g.cs
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\FarmingApp.AssemblyInfoInputs.cache
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\FarmingApp.AssemblyInfo.cs
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\FarmingApp.dll
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\ref\FarmingApp.dll
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\FarmingApp.pdb
+D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\FarmingApp.csprojAssemblyReference.cache
