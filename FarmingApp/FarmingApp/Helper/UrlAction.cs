@@ -24,6 +24,14 @@ namespace FarmingApp.Helper
 
         public static UrlAction GetPostsByCategoryId { get { return new UrlAction("PostsGetByCategoryId.php?CategoryId="); } }
         public static UrlAction GetPostById { get { return new UrlAction("PostGetById.php?Id="); } }
+        public static UrlAction GetAllPost { get { return new UrlAction("PostGetAll.php?"); } }
+        public static UrlAction AddPost { get { return new UrlAction("PostAdd.php?"); } }
 
+        public static UrlAction DeletePost { get { return new UrlAction("PostAdd.php?"); } }
+
+        public static UrlAction EditPost { get { return new UrlAction("PostEdit.php?"); } }
+
+        public static UrlAction GetPostByCategoryId { get { return new UrlAction("PostsGetByCategoryId.php?CategoryId="); } }
+        
     }
 }

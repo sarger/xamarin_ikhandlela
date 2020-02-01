@@ -1,7 +1,11 @@
 ﻿using FarmingApp.Helper;
 using FarmingApp.Models;
+using Newtonsoft.Json;
+using Plugin.Toast;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +15,7 @@ namespace FarmingApp.Services
     {
 
 
-        public async Task<List<PostCategory>> GetEmployeesAsync()
+        public async Task<List<PostCategory>> GetPostCategorysAsync()
         {
             var httpClient = new HttpClient();
 
@@ -21,12 +25,15 @@ namespace FarmingApp.Services
 
                 var jsonResponse = await httpClient.GetStringAsync(url);
 
-                var employeesList = await JsonConvert.DeserializeObjectAsync<List<PostCategory>>(jsonResponse);
+               
+                var postcategoriesList = await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<List<PostCategory>>(jsonResponse));
 
-                return employeesList;
+
+                return postcategoriesList;
             }
             catch (Exception exc)
             {
+                CrossToastPopUp.Current.ShowToastMessage(exc.Message);
             }
 
             return null;
@@ -42,27 +49,30 @@ namespace FarmingApp.Services
 
                 var jsonResponse = await httpClient.GetStringAsync(url);
 
-                var employeesList = await JsonConvert.DeserializeObjectAsync<List<PostCategory>>(jsonResponse);
+                var postcategoriesList = await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<List<PostCategory>>(jsonResponse));
 
-                return employeesList;
+
+                return postcategoriesList;
             }
             catch (Exception exc)
             {
+
+                CrossToastPopUp.Current.ShowToastMessage(exc.Message);
             }
 
             return null;
         }
 
 
-        public async Task AddEmployeeAsync(PostCategory employee)
+        public async Task AddPostCategoryAsync(PostCategory postcategory)
         {
             var httpClient = new HttpClient();
 
             var url = Settings.GetBaseURL(UrlAction.AddCategory.Value);
-
-            var jsonEmployee = await JsonConvert.SerializeObjectAsync(employee);
-
-            HttpContent httpContent = new StringContent(jsonEmployee);
+            
+            var jsonPostCategory = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(postcategory));
+            
+            HttpContent httpContent = new StringContent(jsonPostCategory);
 
             httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
@@ -72,22 +82,23 @@ namespace FarmingApp.Services
             var response = await httpClient.PostAsync(new Uri(url), httpContent);
         }
 
-        public async Task DeleteEmmployeeAsync(PostCategory employee)
+        public async Task DeleteEmmployeeAsync(PostCategory postcategory)
         {
             var httpClient = new HttpClient();
 
             var url = Settings.GetBaseURL(UrlAction.DeleteCategory.Value);
 
-            var response = await httpClient.DeleteAsync(Settings.GetBaseURL(url) + employee.Id);
+            var response = await httpClient.DeleteAsync(Settings.GetBaseURL(url) + postcategory.Id);
         }
 
-        public async Task EditEmployeeAsync(PostCategory employee)
+        public async Task EditPostCategoryAsync(PostCategory postcategory)
         {
             var httpClient = new HttpClient();
 
-            var jsonEmployee = await JsonConvert.SerializeObjectAsync(employee);
+           // var jsonPostCategory = await JsonConvert.SerializeObjectAsync(postcategory);
+            var jsonPostCategory = await  Task.Factory.StartNew(() => JsonConvert.SerializeObject(postcategory));
 
-            var httpContent = new StringContent(jsonEmployee);
+            var httpContent = new StringContent(jsonPostCategory);
 
             httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
@@ -96,7 +107,7 @@ namespace FarmingApp.Services
 
             var url = Settings.GetBaseURL(UrlAction.EditCategory.Value);
 
-            var response = await httpClient.PutAsync(Settings.GetBaseURL(url) + employee.Id, httpContent);
+            var response = await httpClient.PutAsync(Settings.GetBaseURL(url) + postcategory.Id, httpContent);
         }
     }
 

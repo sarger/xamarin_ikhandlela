@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FarmingApp.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace FarmingApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainPageView();
         }
 
         protected override void OnStart()

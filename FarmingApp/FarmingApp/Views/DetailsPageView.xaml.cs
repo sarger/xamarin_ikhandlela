@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FarmingApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,11 @@ namespace FarmingApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DetailsPageView : ContentPage
     {
+        public DetailsViewModel viewModel;
         public DetailsPageView()
         {
             InitializeComponent();
+            BindingContext = viewModel = new DetailsViewModel();
         }
     }
 }

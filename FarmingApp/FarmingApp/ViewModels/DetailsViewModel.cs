@@ -10,47 +10,76 @@ using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
 using FarmingApp.Models;
 using FarmingApp.Services;
+using Plugin.Toast;
 
 namespace FarmingApp.ViewModels
 {
     public class DetailsViewModel : INotifyPropertyChanged
     {
-        private PostCategory _selectedEmployee;
+        private PostCategory _selectedPostCategory;
 
-        public PostCategory SelectedEmployee
+        public PostCategory SelectedPostCategory
         {
-            get { return _selectedEmployee; }
+            get { return _selectedPostCategory; }
             set
             {
-                _selectedEmployee = value;
+                _selectedPostCategory = value;
                 OnPropertyChanged();
             }
         }
 
-        public ICommand AddEmployeeCommand { get; set; }
 
-        public ICommand EditEmployeeCommand { get; set; }
+        private List<Post> _postList;
 
-        public ICommand DeleteEmployeeCommand { get; set; }
+        public List<Post> PostList
+        {
+            get { return _postList; }
+            set
+            {
+                _postList = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ICommand AddPostCategoryCommand { get; set; }
+
+        public ICommand EditPostCategoryCommand { get; set; }
+
+        public ICommand DeletePostCategoryCommand { get; set; }
 
         public DetailsViewModel()
         {
-            _selectedEmployee = new PostCategory();
+            _selectedPostCategory = new PostCategory();
 
             var dataServices = new DataPostCategoryServices();
 
-            AddEmployeeCommand = new RelayCommand(async () => await dataServices.AddEmployeeAsync(SelectedEmployee));
+           // AddPostCategoryCommand = new RelayCommand(async () => await dataServices.AddCategoriesAsync(SelectedPostCategory));
 
-            EditEmployeeCommand = new RelayCommand(async () => await dataServices.EditEmployeeAsync(SelectedEmployee));
+          //  EditPostCategoryCommand = new RelayCommand(async () => await dataServices.EditPostCategoryAsync(SelectedPostCategory));
 
-            DeleteEmployeeCommand = new RelayCommand(async () => await dataServices.DeleteEmmployeeAsync(SelectedEmployee));
+          //  DeletePostCategoryCommand = new RelayCommand(async () => await dataServices.DeleteEmmployeeAsync(SelectedPostCategory));
 
-            Messenger.Default.Register<PostCategory>(this, OnEmployeeMessageReceived);
+            Messenger.Default.Register<PostCategory>(this, OnPostCategoryMessageReceived);
         }
 
-        private void OnEmployeeMessageReceived(PostCategory employee)
+        private void OnPostCategoryMessageReceived(PostCategory postcategory)
         {
-            SelectedEmployee = employee;
+            SelectedPostCategory = postcategory;
+            DownloadDataAsync(postcategory.Id);
+        }
+
+        private async Task DownloadDataAsync(int Id)
+        {
+            try
+            {
+                var dataServices = new DataPostServices();
+
+                PostList = await dataServices.GetPostByCategoryId(Id);
+            }
+            catch (Exception ex)
+            {
+                CrossToastPopUp.Current.ShowToastMessage(ex.Message);
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

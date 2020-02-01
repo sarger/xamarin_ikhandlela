@@ -7,7 +7,7 @@ namespace FarmingApp.Helper
   
         public static class Settings
         {
-            private const string Test_BaseUrl = "http://localhost/mnelisi/Api/";
+            private const string Test_BaseUrl = "http://mnelisi.com/Api/";
             private const string Live_BaseUrl = "http://mnelisi.com/Api/";
 
             public static string GetBaseURL(string PhpFile)
