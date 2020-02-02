@@ -22,5 +22,18 @@ namespace FarmingApp.Helper
 
 
         }
+
+
+    public class Version 
+    {
+
+        public async System.Threading.Tasks.Task isAppUpdatedAsync()
+        {
+
+           
+
+        }
+    
+    }
   
 }
