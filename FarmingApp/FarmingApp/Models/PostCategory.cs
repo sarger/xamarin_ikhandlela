@@ -25,5 +25,11 @@ namespace FarmingApp.Models
             set;
         }
 
+        public string Description
+        {
+            get;
+            set;
+        }
+        
     }
 }
