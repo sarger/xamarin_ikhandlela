@@ -13,4 +13,3 @@ D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\Views\P
 D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\Views\PostsPageView.xaml.g.cs
 D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\FarmingApp.csprojAssemblyReference.cache
 D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\Views\PostDetailView1.xaml.g.cs
-D:\Development\Ikhandlela\FarmingApp\FarmingApp\obj\Debug\netstandard2.0\XamlC.stamp

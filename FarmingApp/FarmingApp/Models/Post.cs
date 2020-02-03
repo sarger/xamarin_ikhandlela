@@ -16,16 +16,8 @@ namespace FarmingApp.Models
 
         public DateTime Date { get; set; }
 
-        public string SubContent
-        {
-             get {   
-                if (Content.Length > 20)
-                    return Content.Substring(0, 20);
-             else
-                    return Content; 
-            } 
-        }
-        
+        public string Title { get; set; }
+
 
     }
 }

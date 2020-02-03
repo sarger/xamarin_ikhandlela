@@ -51,6 +51,31 @@
                                      HorizontalOptions="FillAndExpand"
                                      Padding="12,12,12,6">
 
+                                        <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="6">
+
+                                            <Label Text="{Binding Name}"
+                                  TextColor="#fffa28d4"
+                                  Font="Medium">
+                                            <Label.TextColor>
+                                                <OnPlatform x:TypeArguments="Color"
+                                             iOS="#fffa28d4"
+                                             Android="#ffffffff"
+                                             WinPhone="#ffffffff"/>
+                                            </Label.TextColor>
+                                        </Label>
+
+                                        <Label Text="{Binding Date}"
+                                  TextColor="#fffa28d4"
+                                  Font="Medium">
+                                            <Label.TextColor>
+                                                <OnPlatform x:TypeArguments="Color"
+                                             iOS="#fffa28d4"
+                                             Android="#ffffffff"
+                                             WinPhone="#ffffffff"/>
+                                            </Label.TextColor>
+                                        </Label>
+
+                                            </StackLayout>
                                         <Label Text="{Binding Title}"
                                   TextColor="#fffa28d4"
                                   Font="Large">
@@ -61,17 +86,7 @@
                                              WinPhone="#ffffffff"/>
                                             </Label.TextColor>
                                         </Label>
-                                        
-                                        <Label Text="{Binding SubContent}"
-                                  TextColor="#fffa28d4"
-                                  Font="Large">
-                                            <Label.TextColor>
-                                                <OnPlatform x:TypeArguments="Color"
-                                             iOS="#fffa28d4"
-                                             Android="#ffffffff"
-                                             WinPhone="#ffffffff"/>
-                                            </Label.TextColor>
-                                        </Label>
+                               
 
                                     </StackLayout>
                                 </Grid>
@@ -80,9 +95,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
-            <Button Text="Refresh" TextColor="Black"
-              Command="{Binding RefreshCommand}"/>
 
 
 
