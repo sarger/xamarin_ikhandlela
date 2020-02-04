@@ -10,7 +10,7 @@
         <StackLayout VerticalOptions="FillAndExpand">
 
             <StackLayout Grid.Column="1"
-                                     BackgroundColor="Teal"
+                                     BackgroundColor="White"
                                      HorizontalOptions="FillAndExpand"
                                      Padding="12,12,12,6">
                 <Label Text="{Binding SelectedPostCategory.Category}"
@@ -19,7 +19,7 @@
                 <Label.TextColor>
                     <OnPlatform x:TypeArguments="Color"
                                              iOS="#fffa28d4"
-                                             Android="#ffffffff"
+                                             Android="Black"
                                              WinPhone="#ffffffff"/>
                 </Label.TextColor>
             </Label>
@@ -59,7 +59,7 @@
                                             <Label.TextColor>
                                                 <OnPlatform x:TypeArguments="Color"
                                              iOS="#fffa28d4"
-                                             Android="#ffffffff"
+                                             Android="Black"
                                              WinPhone="#ffffffff"/>
                                             </Label.TextColor>
                                         </Label>
@@ -70,7 +70,7 @@
                                             <Label.TextColor>
                                                 <OnPlatform x:TypeArguments="Color"
                                              iOS="#fffa28d4"
-                                             Android="#ffffffff"
+                                             Android="Black"
                                              WinPhone="#ffffffff"/>
                                             </Label.TextColor>
                                         </Label>
@@ -82,7 +82,7 @@
                                             <Label.TextColor>
                                                 <OnPlatform x:TypeArguments="Color"
                                              iOS="#fffa28d4"
-                                             Android="#ffffffff"
+                                             Android="Black"
                                              WinPhone="#ffffffff"/>
                                             </Label.TextColor>
                                         </Label>
