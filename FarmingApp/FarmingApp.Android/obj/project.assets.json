@@ -2466,24 +2466,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mnelisi Mthuli\\.nuget\\packages\\": {},
+    "C:\\Users\\MthuliM\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\Ikhandlela\\FarmingApp\\FarmingApp.Android\\FarmingApp.Android.csproj",
+      "projectUniqueName": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp.Android\\FarmingApp.Android.csproj",
       "projectName": "FarmingApp.Android",
-      "projectPath": "D:\\Development\\Ikhandlela\\FarmingApp\\FarmingApp.Android\\FarmingApp.Android.csproj",
-      "packagesPath": "C:\\Users\\Mnelisi Mthuli\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\Ikhandlela\\FarmingApp\\FarmingApp.Android\\obj\\",
+      "projectPath": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp.Android\\FarmingApp.Android.csproj",
+      "packagesPath": "C:\\Users\\MthuliM\\.nuget\\packages\\",
+      "outputPath": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mnelisi Mthuli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MthuliM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2497,8 +2497,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\Development\\Ikhandlela\\FarmingApp\\FarmingApp\\FarmingApp.csproj": {
-              "projectPath": "D:\\Development\\Ikhandlela\\FarmingApp\\FarmingApp\\FarmingApp.csproj"
+            "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp\\FarmingApp.csproj": {
+              "projectPath": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp\\FarmingApp.csproj"
             }
           }
         }

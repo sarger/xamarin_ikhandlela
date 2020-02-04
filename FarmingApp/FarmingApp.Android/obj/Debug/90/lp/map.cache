@@ -41,3 +41,14 @@ Xamarin.Android.Support.ViewPager
 Xamarin.Essentials
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
+FarmingApp
+System.Runtime
+CommonServiceLocator
+GalaSoft.MvvmLight
+GalaSoft.MvvmLight.Extras
+Newtonsoft.Json
+Plugin.Toast.Abstractions
+System.Net.Http.Extensions
+System.Net.Http.Primitives
+Xamarin.Forms.Core
+Xamarin.Forms.Xaml
