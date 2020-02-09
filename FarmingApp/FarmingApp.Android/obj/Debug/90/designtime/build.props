@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 bundleassemblies=false
 aotassemblies=false
 androidaotmode=none
@@ -26,3 +27,29 @@ os=windows_nt
 designtimebuild=true
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
+=======
+BundleAssemblies=False
+AotAssemblies=False
+AndroidAotMode=
+ExplicitCrunch=False
+EnableProguard=
+UseSharedRuntime=true
+EmbedAssembliesIntoApk=False
+AndroidLinkMode=None
+AndroidLinkSkip=
+AndroidSdkBuildToolsVersion=27.0.3
+AndroidSdkPath=
+AndroidNdkPath=
+JavaSdkPath=
+AndroidSequencePointsMode=None
+XamarinAndroidVersion=9.1.7-0
+MonoSymbolArchive=False
+AndroidUseLatestPlatformSdk=false
+TargetFrameworkVersion=v9.0
+AndroidCreatePackagePerAbi=
+OS=Windows_NT
+DesignTimeBuild=
+AndroidIncludeDebugSymbols=True
+AdbTarget=
+AdbOptions=
+>>>>>>> b89423fd698f18777d64c0dd37071de3f1b6baf3

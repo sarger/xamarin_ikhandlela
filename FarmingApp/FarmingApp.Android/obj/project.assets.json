@@ -2466,7 +2466,11 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\mthulim\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\MthuliM\\.nuget\\packages\\": {},
+>>>>>>> b89423fd698f18777d64c0dd37071de3f1b6baf3
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
@@ -2475,7 +2479,11 @@
       "projectUniqueName": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp.Android\\FarmingApp.Android.csproj",
       "projectName": "FarmingApp.Android",
       "projectPath": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp.Android\\FarmingApp.Android.csproj",
+<<<<<<< HEAD
       "packagesPath": "C:\\Users\\mthulim\\.nuget\\packages\\",
+=======
+      "packagesPath": "C:\\Users\\MthuliM\\.nuget\\packages\\",
+>>>>>>> b89423fd698f18777d64c0dd37071de3f1b6baf3
       "outputPath": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
@@ -2483,7 +2491,11 @@
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\mthulim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\MthuliM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> b89423fd698f18777d64c0dd37071de3f1b6baf3
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

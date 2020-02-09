@@ -2449,7 +2449,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mthulim\\.nuget\\packages\\": {},
+    "C:\\Users\\MthuliM\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -2459,7 +2459,7 @@
       "projectUniqueName": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp\\FarmingApp.csproj",
       "projectName": "FarmingApp",
       "projectPath": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp\\FarmingApp.csproj",
-      "packagesPath": "C:\\Users\\mthulim\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\MthuliM\\.nuget\\packages\\",
       "outputPath": "C:\\Development\\Xamarin\\FarmingApp\\FarmingApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
@@ -2467,7 +2467,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mthulim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MthuliM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
