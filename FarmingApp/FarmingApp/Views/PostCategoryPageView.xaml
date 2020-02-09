@@ -32,6 +32,7 @@
                                     <StackLayout Grid.Column="1"
                                      BackgroundColor="White"
                                      HorizontalOptions="FillAndExpand"
+                                                 
                                      Padding="12,12,12,6">
 
                                         <Label Text="{Binding Category}"
@@ -58,6 +59,10 @@
                                             </Label.TextColor>
                                         </Label>
                                      
+                                        
+                                        
+                                        
+                                        
                                     </StackLayout>
                                 </Grid>
                             </ViewCell.View>
