@@ -5,7 +5,11 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Webkit;
+ 
 using Android.Widget;
+using Plugin.Connectivity;
+using System;
+ 
 
 namespace YeboFunda
 {
@@ -19,10 +23,19 @@ namespace YeboFunda
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-
             textMessage = FindViewById<WebView>(Resource.Id.message);
+
+        
+                textMessage.LoadUrl("https://www.mnelisi.com/mobile.php");
+         
+                         
+ 
+             
+
+      
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -32,22 +45,13 @@ namespace YeboFunda
         }
         public bool OnNavigationItemSelected(IMenuItem item)
         {
-            switch (item.ItemId)
-            {
-                case Resource.Id.navigation_home:
-                    textMessage.LoadUrl("https://www.google.com");
-
-                    return true;
-                case Resource.Id.navigation_dashboard:
-                    textMessage.LoadUrl("https://www.mnelisi.com");
-
-                    return true;
-                case Resource.Id.navigation_notifications:
-                    textMessage.LoadUrl("https://www.mnelisi.com/Mobile");
-
-                    return true;
-            }
+         
             return false;
+        }
+
+        private async void CheckConnection()
+        {
+          
         }
     }
 }
